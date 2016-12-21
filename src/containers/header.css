@@ -1,0 +1,22 @@
+$buttonColor: #595959;
+
+.header {
+    text-align: right;
+
+    .pretty & {
+        padding: 20px;
+
+        &__button {
+            background-color: $buttonColor;
+            border: 1px solid $buttonColor;
+            margin-left: 10px;
+            color: white;
+            cursor: pointer;
+            padding: 4px 10px;
+
+            &:hover {
+                background-color: lighten($buttonColor, 20%);
+            }
+        }
+    }
+}

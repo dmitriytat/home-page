@@ -1,0 +1,22 @@
+$linkColor: #c0c0c0;
+
+.pretty {
+    .link {
+        color: $linkColor;
+        border-bottom: 1px solid darken($linkColor, 10%);
+        text-decoration: none;
+        transition: border-bottom 0.3s;
+
+        &:visited {
+            color: lighten($linkColor, 20%);
+        }
+
+        &:hover {
+            color: darken($linkColor, 20%);
+        }
+
+        &:active {
+            border-bottom-width: 2px;
+        }
+    }
+}
