@@ -1,0 +1,30 @@
+.links {
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        margin-right: 20px;
+    }
+
+    &__point {
+        padding-left: 20px;
+        margin-bottom: 10px;
+        position: relative;
+
+        &:before {
+            content: '•';
+            position: absolute;
+            left: 0px;
+            top: 0px
+        }
+
+        @media (max-width: 480px) {
+            padding-left: 0;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

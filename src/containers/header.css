@@ -1,22 +1,28 @@
 $buttonColor: #595959;
 
 .header {
-    text-align: right;
+    background-color: #3466a5;
 
-    .pretty & {
-        padding: 20px;
+    &__button {
+        background-color: $buttonColor;
+        border: 1px solid $buttonColor;
+        margin-left: 10px;
+        color: white;
+        cursor: pointer;
+        padding: 4px 10px;
 
-        &__button {
-            background-color: $buttonColor;
-            border: 1px solid $buttonColor;
-            margin-left: 10px;
-            color: white;
-            cursor: pointer;
-            padding: 4px 10px;
+        &:hover {
+            background-color: lighten($buttonColor, 20%);
+        }
+    }
 
-            &:hover {
-                background-color: lighten($buttonColor, 20%);
-            }
+    &__settings {
+        float: right;
+
+        @media (max-width: 480px) {
+            float: none;
+            display: block;
+            background-color: rgba(35, 63, 105, 1);
         }
     }
 }

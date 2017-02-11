@@ -1,10 +1,8 @@
 import React from 'react';
 
 import Header from './containers/header.jsx';
-import Link from './components/link/link.jsx';
-import List from './components/list/list.jsx';
-
-import './reset.css';
+import About from './containers/about.jsx';
+import Links from './containers/links.jsx';
 
 const cn = require('bem-cn')('app');
 import './app.css';
@@ -13,31 +11,22 @@ import { translate, changeLanguage } from '../i18n/i18n';
 
 export default class Application extends React.Component {
     state = {
-        update: ''
+        update: '',
+        page: 'About',
     }
 
     render() {
         return (
             <div className={cn()}>
-                <Header onChangeLanguage={this.handleChangeLanguage.bind(this)}/>
-                <List
-                    className={cn('list')}
-                    title={translate('links')}
-                    elements={[
-                        <Link
-                            href="https://github.com/dmitriytat"
-                        />,
-                        <Link
-                            href="https://vk.com/dmitriytat"
-                        />,
-                        <Link
-                            href="https://fb.com/dmitriytat"
-                        />,
-                        <Link
-                            href="https://www.codewars.com/users/dmitriytat"
-                        />
-                    ]}
+                <Header
+                    onChangeLanguage={this.handleChangeLanguage.bind(this)}
+                    onChangePage={this.handleChangePage.bind(this)}
+                    page={this.state.page}
                 />
+                <div className={cn('content')}>
+                    {this.state.page === 'About' && <About />}
+                    {this.state.page === 'Links' && <Links />}
+                </div>
             </div>
         );
     }
@@ -47,6 +36,12 @@ export default class Application extends React.Component {
             this.setState({
                 update: Date.now(),
             })
+        });
+    }
+
+    handleChangePage(page) {
+        this.setState({
+            page,
         });
     }
 }

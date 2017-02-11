@@ -4,21 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.21.0",
+    "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
-    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-class-properties": "^6.22.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-plugin-transform-es3-member-expression-literals": "^6.8.0",
-    "babel-preset-es2015": "^6.18.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
     "babel-preset-es2015-native-modules": "^6.9.4",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
     "css-loader": "^0.26.1",
-    "node-sass": "4.0.0",
-    "sass-loader": "^4.1.0",
+    "node-sass": "4.5.0",
+    "sass-loader": "^5.0.1",
     "style-loader": "^0.13.1",
-    "webpack": "2.2.0-rc.1",
-    "webpack-dev-server": "2.2.0-rc.0"
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.3.0"
   },
   "scripts": {
     "start": "webpack-dev-server --port=4000 --hot --inline --progress --colors",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "bem-cn": "^2.1.3",
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
