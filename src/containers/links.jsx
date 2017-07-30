@@ -21,6 +21,14 @@ export default class Links extends React.Component {
                         />
                     </li>
                     <li className={cn('point')}>
+                        <span className={cn('desc')}>{translate('my-linkedin')}</span>
+                        <Link
+                            text="linkedin:dmitriytat"
+                            href="https://linkedin.com/in/dmitriytat"
+                            target="_blank"
+                        />
+                    </li>
+                    <li className={cn('point')}>
                         <span className={cn('desc')}>{translate('my-facebook')}</span>
                         <Link
                             text="fb:dmitriytat"

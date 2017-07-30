@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './containers/header.jsx';
 import About from './containers/about.jsx';
 import Links from './containers/links.jsx';
+import Projects from "./containers/projects.jsx";
 
 const cn = require('bem-cn')('app');
 import './app.css';
@@ -26,6 +27,7 @@ export default class Application extends React.Component {
                 <div className={cn('content')}>
                     {this.state.page === 'About' && <About />}
                     {this.state.page === 'Links' && <Links />}
+                    {this.state.page === 'Projects' && <Projects />}
                 </div>
             </div>
         );

@@ -36,6 +36,12 @@ export default class Header extends React.Component {
                     header={true}
                     onClick={this.props.onChangePage.bind(this, 'Links')}
                 />
+                <Link
+                    active={this.props.page === 'Projects'}
+                    text={translate('m-projects')}
+                    header={true}
+                    onClick={this.props.onChangePage.bind(this, 'Projects')}
+                />
                 <span className={cn('settings')}>
                     {
                         this.props.languages.map(language => (
