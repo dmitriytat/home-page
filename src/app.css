@@ -1,37 +1,37 @@
 html, body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    font-family: 'Lucida Console', monospace;
-    line-height: 20px;
-    font-size: 16px;
-    margin: 0 auto;
-    cursor: default;
-    background-color: #2e3336;
-    color: #fff;
+  font-family: 'Monaco', 'Lucida Console', monospace;
+  line-height: 20px;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: default;
+  background-color: #2e3336;
+  color: #fff;
 
-    @media (max-width: 480px) {
-        line-height: 24px;
-        font-size: 18px;
-    }
+  @media (max-width: 480px) {
+    line-height: 24px;
+    font-size: 18px;
+  }
 }
 
 .app {
-    &__content {
-        padding: 48px;
+  &__content {
+    padding: 48px;
 
-        @media (max-width: 480px) {
-            padding: 15px;
-        }
+    @media (max-width: 480px) {
+      padding: 15px;
     }
+  }
 }
 
 .br {
-    &:after {
-        content:"\\n";
-        background-color: #4f5455;
-        white-space: pre-wrap;
-    }
+  &::after {
+    content: "\\n";
+    background-color: #4f5455;
+    white-space: pre-wrap;
+  }
 }

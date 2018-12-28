@@ -1,12 +1,22 @@
 {
   "presets": [
-    "es2015",
-    "stage-0",
-    "react"
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "useBuiltIns": "usage"
+      }
+    ]
   ],
   "plugins": [
-    "transform-decorators-legacy",
-    "transform-class-properties",
-    "transform-es3-member-expression-literals"
-  ]
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types"
+      ]
+    }
+  }
 }

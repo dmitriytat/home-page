@@ -1,42 +1,42 @@
 .projects {
-    &__title {
-        margin-bottom: 20px;
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin-right: 20px;
+  }
+
+  &__list {
+    margin-bottom: 20px;
+  }
+
+  &__point {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
-    &__desc {
-        margin-right: 20px;
+    @media (max-width: 480px) {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
     }
 
-    &__list {
-        margin-bottom: 20px;
+    .link {
+      margin-right: 20px;
     }
+  }
 
-    &__point {
-        padding-left: 20px;
-        margin-bottom: 10px;
-        position: relative;
-
-        &:before {
-            content: '•';
-            position: absolute;
-            left: 0px;
-            top: 0px
-        }
-
-        @media (max-width: 480px) {
-            padding-left: 0;
-
-            &:before {
-                display: none;
-            }
-        }
-
-        .link {
-            margin-right: 20px;
-        }
-    }
-
-    &__badge {
-        img { vertical-align: top; }
-    }
+  &__badge {
+    img { vertical-align: top; }
+  }
 }
