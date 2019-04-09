@@ -5,9 +5,11 @@ import Header from './containers/header.jsx';
 import About from './containers/about.jsx';
 import Links from './containers/links.jsx';
 import Projects from './containers/projects.jsx';
+
+import './reset.css';
 import './app.css';
 
-import { changeLanguage } from '../i18n/i18n';
+import { changeLanguage } from './i18n/i18n';
 
 const cn = block('app');
 

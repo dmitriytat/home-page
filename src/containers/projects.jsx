@@ -3,7 +3,7 @@ import block from 'bem-cn-lite';
 
 import Link from '../components/link/link.jsx';
 import './projects.css';
-import { translate } from '../../i18n/i18n';
+import { translate } from '../i18n/i18n';
 
 const cn = block('projects');
 

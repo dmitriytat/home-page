@@ -1,10 +1,12 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: {
-    index: './index.jsx',
+    index: './src/index.jsx',
   },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/dist',
+    path: `${__dirname}/dist`,
+    publicPath: '/',
     filename: '[name].bundle.js',
     chunkFilename: '[id].bundle.js',
   },
@@ -24,10 +26,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.jpg$/,
-        loader: 'file?name=[path][name].[ext]',
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader?name=[path][name].[ext]',
       },
     ],
   },
   devtool: 'source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
 };
