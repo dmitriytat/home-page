@@ -4,6 +4,7 @@ node_js:
   - stable
 script:
   - npm run build
+  - cp ./CNAME ./dist/CNAME
 deploy:
   - provider: pages
     target-branch: gh-pages
