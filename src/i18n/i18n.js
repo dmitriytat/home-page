@@ -24,6 +24,7 @@ const dictionary = {
     webclinic: 'On this project I was lead frontend developer.',
     themoscowtimes: 'I developed article constructor and partially open pages of site.',
     sberbank: 'I developed widgets and calculators.',
+    'vue-query-normalizer': 'Query normalizer for Vue Router.',
   },
   ru: {
     'm-about': 'Главная',
@@ -48,6 +49,7 @@ const dictionary = {
     webclinic: 'На этом проекте я был ведущим разработчиком. Работая в паре с дизайнером, создал приятный и технологичный интерфейс.',
     themoscowtimes: 'Разработал конструктор статей в админке на AngularJS, и частично открытые страницы сайта.',
     sberbank: 'Разрабатывал виджеты для старого и нового сайта.',
+    'vue-query-normalizer': 'Нормалайзер параметров запроса для Vue Router',
   },
 };
 

@@ -14,6 +14,28 @@ export default class Projects extends React.Component {
         <div className={cn('title')}>{translate('open-projects')}</div>
         <ul className={cn('list')}>
           <li className={cn('point')}>
+            <span className={cn('desc')}>{translate('vue-query-normalizer')}</span>
+            <Link
+              text="vue-query-normalizer"
+              href="https://github.com/dmitriytat/vue-query-normalizer"
+              target="_blank"
+            />
+            <Link
+              text="demo"
+              href="https://codesandbox.io/s/xrjwl8n8ro"
+              target="_blank"
+            />
+            <a
+              className={cn('badge')}
+              href="https://www.npmjs.com/package/vue-query-normalizer"
+            >
+              <img
+                src="https://badge.fury.io/js/vue-query-normalizer.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li className={cn('point')}>
             <span className={cn('desc')}>{translate('jedi-validate')}</span>
             <Link
               text="jedi-validate"
