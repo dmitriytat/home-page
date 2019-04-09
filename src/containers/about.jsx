@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React from 'react';
 
 import Link from '../components/link/link.jsx';
@@ -18,11 +19,14 @@ export default class About extends React.Component {
         <br />
         {translate('my-name')}
         <br />
-        {translate('i-am')} <Link
-        text={translate('funcorp')}
-        href="https://www.linkedin.com/company/funcorp"
-        target="_blank"
-      />.
+        {translate('i-am')}
+        {' '}
+        <Link
+          text={translate('funcorp')}
+          href="https://www.linkedin.com/company/funcorp"
+          target="_blank"
+        />
+.
       </div>
     );
   }

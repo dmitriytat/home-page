@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 let currentLanguage = window.localStorage.getItem('language') || 'en';
 
 const dictionary = {
@@ -58,6 +59,7 @@ export function translate(phrase, language = currentLanguage) {
 }
 
 export function changeLanguage(language, callback) {
+  // eslint-disable-next-line no-undef
   window.localStorage.setItem('language', language);
 
   currentLanguage = language;

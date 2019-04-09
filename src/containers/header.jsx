@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind,jsx-a11y/anchor-is-valid,react/destructuring-assignment */
 import React from 'react';
 import PropTypes from 'prop-types';
 import block from 'bem-cn-lite';
@@ -13,14 +14,16 @@ export default class Header extends React.Component {
     languages: PropTypes.arrayOf(PropTypes.string),
     onChangeLanguage: PropTypes.func,
     onChangePage: PropTypes.func,
+    page: PropTypes.string,
   };
 
   static defaultProps = {
     languages: ['en', 'ru'],
-    onChangeLanguage: (language) => {
-    },
-    onChangePage: (page) => {
-    },
+    page: 'About',
+    // eslint-disable-next-line no-unused-vars
+    onChangeLanguage: (language) => {},
+    // eslint-disable-next-line no-unused-vars
+    onChangePage: (page) => {},
   };
 
   render() {
