@@ -9,13 +9,15 @@ import Projects from './containers/projects.jsx';
 import './reset.css';
 import './app.css';
 
-import { changeLanguage } from './i18n/i18n';
+import { changeLanguage, getLanguage } from './i18n/i18n';
 
 const cn = block('app');
 
 export default class Application extends React.Component {
   state = {
+    // eslint-disable-next-line react/no-unused-state
     update: '',
+    lang: getLanguage(),
     page: 'About',
   };
 
@@ -25,6 +27,7 @@ export default class Application extends React.Component {
         <Header
           onChangeLanguage={this.handleChangeLanguage.bind(this)}
           onChangePage={this.handleChangePage.bind(this)}
+          lang={this.state.lang}
           page={this.state.page}
         />
         <div className={cn('content')}>
@@ -37,9 +40,10 @@ export default class Application extends React.Component {
   }
 
   handleChangeLanguage(language) {
-    changeLanguage(language, () => {
+    changeLanguage(language, (lang) => {
       this.setState({
         update: Date.now(),
+        lang,
       });
     });
   }

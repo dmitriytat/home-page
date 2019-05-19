@@ -63,5 +63,9 @@ export function changeLanguage(language, callback) {
   window.localStorage.setItem('language', language);
 
   currentLanguage = language;
-  callback();
+  callback(currentLanguage);
+}
+
+export function getLanguage() {
+  return currentLanguage;
 }

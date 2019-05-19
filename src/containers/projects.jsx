@@ -10,7 +10,7 @@ const cn = block('projects');
 export default class Projects extends React.Component {
   render() {
     return (
-      <div className={cn()}>
+      <section className={cn()}>
         <div className={cn('title')}>{translate('open-projects')}</div>
         <ul className={cn('list')}>
           <li className={cn('point')}>
@@ -86,7 +86,7 @@ export default class Projects extends React.Component {
             <span className={cn('desc')}>{translate('top-secret')}</span>
           </li>
         </ul>
-      </div>
+      </section>
     );
   }
 }

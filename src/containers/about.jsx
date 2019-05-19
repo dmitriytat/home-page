@@ -7,7 +7,7 @@ import { translate } from '../i18n/i18n';
 export default class About extends React.Component {
   render() {
     return (
-      <div>
+      <section>
         <img
           src={require('../images/me.png')}
           alt={translate('me')}
@@ -27,7 +27,7 @@ export default class About extends React.Component {
           target="_blank"
         />
 .
-      </div>
+      </section>
     );
   }
 }

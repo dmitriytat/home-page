@@ -15,6 +15,7 @@ export default class Header extends React.Component {
     onChangeLanguage: PropTypes.func,
     onChangePage: PropTypes.func,
     page: PropTypes.string,
+    lang: PropTypes.string,
   };
 
   static defaultProps = {
@@ -28,30 +29,39 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <div className={cn()}>
-        <Link
-          active={this.props.page === 'About'}
-          text={translate('m-about')}
-          header
-          onClick={this.props.onChangePage.bind(this, 'About')}
-        />
-        <Link
-          active={this.props.page === 'Links'}
-          text={translate('m-links')}
-          header
-          onClick={this.props.onChangePage.bind(this, 'Links')}
-        />
-        <Link
-          active={this.props.page === 'Projects'}
-          text={translate('m-projects')}
-          header
-          onClick={this.props.onChangePage.bind(this, 'Projects')}
-        />
+      <nav className={cn()}>
+        <ul className={cn('menu')}>
+          <li className={cn('link')}>
+            <Link
+              active={this.props.page === 'About'}
+              text={translate('m-about')}
+              header
+              onClick={this.props.onChangePage.bind(this, 'About')}
+            />
+          </li>
+          <li className={cn('link')}>
+            <Link
+              active={this.props.page === 'Links'}
+              text={translate('m-links')}
+              header
+              onClick={this.props.onChangePage.bind(this, 'Links')}
+            />
+          </li>
+          <li className={cn('link')}>
+            <Link
+              active={this.props.page === 'Projects'}
+              text={translate('m-projects')}
+              header
+              onClick={this.props.onChangePage.bind(this, 'Projects')}
+            />
+          </li>
+        </ul>
         <span className={cn('settings')}>
           {
             this.props.languages.map(language => (
               <Link
                 header
+                active={this.props.lang === language}
                 key={language}
                 text={translate(language)}
                 onClick={this.props.onChangeLanguage.bind(this, language)}
@@ -59,7 +69,7 @@ export default class Header extends React.Component {
             ))
           }
         </span>
-      </div>
+      </nav>
     );
   }
 }

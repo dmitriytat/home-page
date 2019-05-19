@@ -10,7 +10,7 @@ const cn = block('links');
 export default class Links extends React.Component {
   render() {
     return (
-      <div className={cn()}>
+      <section className={cn()}>
         <div className={cn('title')}>{translate('links')}</div>
         <ul>
           <li className={cn('point')}>
@@ -46,7 +46,7 @@ export default class Links extends React.Component {
             />
           </li>
         </ul>
-      </div>
+      </section>
     );
   }
 }
