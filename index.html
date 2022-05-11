@@ -43,16 +43,17 @@
         }
 
         .page {
-            padding: 45px;
-            max-width: 320px;
+            padding: 24px;
+            padding-bottom: 48px;
+            max-width: 414px;
+            box-sizing: border-box;
         }
 
         .greetings {
             font-weight: bold;
             font-size: 32px;
             line-height: 37px;
-            margin: 0 0 10px;
-
+            margin-bottom: 12px;
             color: #FFFFFF;
         }
 
@@ -62,28 +63,27 @@
             margin-top: 10px;
             color: #C2C2C2;
             transition: color 0.15s ease-in;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
 
         .socials {
             display: flex;
-            margin: 0 0 30px;
-            margin-bottom: 45px;
+            margin: 0 0 48px;
         }
 
         .social + .social {
-            margin-left: 30px;
+            margin-left: 32px;
         }
 
         .social-link {
             display: flex;
             align-items: center;
             font-size: 16px;
-            line-height: 19px;
+            line-height: 24px;
             text-decoration: none;
-            color: #ffffff;
+            color: #fff;
             cursor: pointer;
-            opacity: 0.8;
+            opacity: 0.7;
             transition: opacity 0.15s ease-in;
         }
 
@@ -92,23 +92,23 @@
         }
 
         .social-icon {
-            margin-right: 10px;
-            fill: #ffffff;
+            margin-right: 12px;
+            fill: #fff;
         }
 
         .sub {
             text-align: right;
             font-weight: bold;
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 16px;
+            line-height: 24px;
             letter-spacing: 0.14em;
             text-transform: uppercase;
-            color: #ffffff;
-            margin: 30px 0;
+            color: #fff;
+            margin: 32px 0;
         }
 
         .project + .project {
-            margin-top: 30px;
+            margin-top: 32px;
         }
 
         .project-link {
@@ -118,7 +118,7 @@
         }
 
         .project-for {
-            font-size: 14px;
+            font-size: 12px;
             line-height: 16px;
             color: #C2C2C2;
             transition: color 0.15s ease-in;
@@ -126,11 +126,11 @@
 
         .project-name {
             font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 18px;
+            line-height: 24px;
             letter-spacing: 0.14em;
-            margin-top: 10px;
-            color: #ffffff;
+            margin-top: 12px;
+            color: #fff;
             transition: color 0.15s ease-in;
         }
 
@@ -142,13 +142,8 @@
             transition: color 0.15s ease-in;
         }
 
-        .project-link:hover .project-for,
-        .project-link:hover .project-desc {
-            color: #ffffff;
-        }
-
         .project-link:hover .project-name {
-            color: #C2C2C2;
+            color: #a3a3a3;
         }
     </style>
 </head>
@@ -181,16 +176,23 @@
     <ul class="projects">
         <li class="project">
             <a class="project-link" href="https://github.com/dmitriytat/vue-query-normalizer">
-                <span class="project-for">typescript</span>
+                <span class="project-for">vue</span>
                 <span class="project-name">vue-query-normalizer</span>
                 <span class="project-desc">Plugin helps to handle query parameters.</span>
             </a>
         </li>
         <li class="project">
             <a class="project-link" href="https://github.com/dmitriytat/keypress">
-                <span class="project-for">typescript</span>
+                <span class="project-for">deno</span>
                 <span class="project-name">keypress</span>
                 <span class="project-desc">STDIN keypress reader.</span>
+            </a>
+        </li>
+        <li class="project">
+            <a class="project-link" href="https://github.com/dmitriytat/climaster">
+                <span class="project-for">deno</span>
+                <span class="project-name">climaster</span>
+                <span class="project-desc">Terminal master framework.</span>
             </a>
         </li>
         <li class="project">
