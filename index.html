@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Dmitrii Tatarintcev</title>
     <meta charset="UTF-8">
-    <title>Hello, I’m Dmitriy Tatarintsev</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -23,134 +27,12 @@
             webvisor: true
         });
     </script> <!-- /Yandex.Metrika counter -->
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            background: #151515;
-            color: #C2C2C2;
-            font-family: 'Roboto', sans-serif;
-            cursor: default;
-        }
-
-        ul, li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .page {
-            padding: 24px;
-            padding-bottom: 48px;
-            max-width: 414px;
-            box-sizing: border-box;
-        }
-
-        .greetings {
-            font-weight: bold;
-            font-size: 32px;
-            line-height: 37px;
-            margin-bottom: 12px;
-            color: #FFFFFF;
-        }
-
-        .description {
-            font-size: 14px;
-            line-height: 16px;
-            margin-top: 10px;
-            color: #C2C2C2;
-            transition: color 0.15s ease-in;
-            margin-bottom: 32px;
-        }
-
-        .socials {
-            display: flex;
-            margin: 0 0 48px;
-        }
-
-        .social + .social {
-            margin-left: 32px;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            line-height: 24px;
-            text-decoration: none;
-            color: #fff;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: opacity 0.15s ease-in;
-        }
-
-        .social-link:hover {
-            opacity: 1;
-        }
-
-        .social-icon {
-            margin-right: 12px;
-            fill: #fff;
-        }
-
-        .sub {
-            text-align: right;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            color: #fff;
-            margin: 32px 0;
-        }
-
-        .project + .project {
-            margin-top: 32px;
-        }
-
-        .project-link {
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-        }
-
-        .project-for {
-            font-size: 12px;
-            line-height: 16px;
-            color: #C2C2C2;
-            transition: color 0.15s ease-in;
-        }
-
-        .project-name {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 24px;
-            letter-spacing: 0.14em;
-            margin-top: 12px;
-            color: #fff;
-            transition: color 0.15s ease-in;
-        }
-
-        .project-desc {
-            font-size: 14px;
-            line-height: 16px;
-            margin-top: 10px;
-            color: #C2C2C2;
-            transition: color 0.15s ease-in;
-        }
-
-        .project-link:hover .project-name {
-            color: #a3a3a3;
-        }
-    </style>
 </head>
 <body>
 <div class="page">
-    <h1 class="greetings">Hello, I’m Dmitriy Tatarintsev</h1>
-    <p class="description">Frontend developer</p>
+    <h1 class="heading-1">Dmitrii Tatarintcev</h1>
+    <p class="description">Hi! I'm a frontend developer. I’ve had some experience with Vue 2 and 3, modern React and first Angular.</p>
     <ul class="socials">
         <li class="social">
             <a href="https://github.com/dmitriytat" class="social-link">
@@ -172,65 +54,65 @@
             </a>
         </li>
     </ul>
-    <h2 class="sub">Open source</h2>
-    <ul class="projects">
+    <h2 class="heading-2">Open source</h2>
+    <ol class="projects">
         <li class="project">
             <a class="project-link" href="https://github.com/dmitriytat/vue-query-normalizer">
-                <span class="project-for">vue</span>
                 <span class="project-name">vue-query-normalizer</span>
-                <span class="project-desc">Plugin helps to handle query parameters.</span>
+                <span class="project-desc">A plugin helps to treat query parameters like props, serialize them into a string and unserialize into defined types.</span>
+                <span class="project-for">vue 2</span>
+            </a>    
+        </li>
+        <li class="project">
+            <a class="project-link" href="https://github.com/dmitriytat/jedi-validate">
+                <span class="project-name">jedi-validate</span>
+                <span class="project-desc">A form validation module for native elements. An easy solution for simple forms.</span>
+                <span class="project-for">javascript</span>
             </a>
         </li>
         <li class="project">
             <a class="project-link" href="https://github.com/dmitriytat/keypress">
-                <span class="project-for">deno</span>
                 <span class="project-name">keypress</span>
-                <span class="project-desc">STDIN keypress reader.</span>
+                <span class="project-desc">A STDIN keypress reader, helps to handle keypress event in cli-applications.</span>
+                <span class="project-for">deno</span>
             </a>
         </li>
         <li class="project">
             <a class="project-link" href="https://github.com/dmitriytat/climaster">
-                <span class="project-for">deno</span>
                 <span class="project-name">climaster</span>
-                <span class="project-desc">Terminal master framework.</span>
+                <span class="project-desc">A terminal master framework.</span>
+                <span class="project-for">deno</span>
             </a>
         </li>
-        <li class="project">
-            <a class="project-link" href="https://github.com/dmitriytat/jedi-validate">
-                <span class="project-for">javascript</span>
-                <span class="project-name">jedi-validate</span>
-                <span class="project-desc">Form validation module for native elements.</span>
-            </a>
-        </li>
-    </ul>
-    <h2 class="sub">Publications</h2>
-    <ul>
+    </ol>
+    <h2 class="heading-2">Publications</h2>
+    <ol class="projects">
         <li class="project">
             <a class="project-link" href="https://habr.com/ru/company/funcorp/blog/507282/">
-                <span class="project-for">habr.com</span>
                 <span class="project-name">Command line To-Do on Deno</span>
-                <span class="project-desc">Deno tutorial</span>
+                <span class="project-desc">A deno tutorial</span>
+                <span class="project-for">habr.com</span>
             </a>
         </li>
         <li class="project">
             <a class="project-link" href="https://habr.com/ru/company/funcorp/blog/475968/">
-                <span class="project-for">habr.com</span>
                 <span class="project-name">Exciting new features in Vue 3</span>
-                <span class="project-desc">Translation to russian.</span>
+                <span class="project-desc">A translation to russian.</span>
+                <span class="project-for">habr.com</span>
             </a>
         </li>
         <li class="project">
             <a class="project-link" href="https://habr.com/ru/company/funcorp/blog/490014/">
-                <span class="project-for">habr.com</span>
                 <span class="project-name">JavaScript tree shaking, like a pro</span>
-                <span class="project-desc">Translation to russian.</span>
+                <span class="project-desc">A translation to russian.</span>
+                <span class="project-for">habr.com</span>
             </a>
         </li>
         <li class="project">
             <a class="project-link" href="https://habr.com/ru/company/funcorp/blog/470962/">
-                <span class="project-for">habr.com</span>
                 <span class="project-name">JSConf Budapest 2019</span>
-                <span class="project-desc">Review on JavaScript conference.</span>
+                <span class="project-desc">A review on JavaScript conference.</span>
+                <span class="project-for">habr.com</span>
             </a>
         </li>
     </ul>

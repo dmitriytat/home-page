@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #1a1b1b;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+    margin: 0 auto;
+    max-width: 640px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.heading-1 {
+    font-size: 80px;
+    font-weight: 400;
+    font-family: 'Noto Serif Georgian', serif;
+    line-height: 1em;
+    letter-spacing: -1px;
+}
+
+.heading-2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Noto Serif Georgian', serif;
+    line-height: 1em;
+    letter-spacing: -0.3px;
+    margin-top: 1em;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    padding: 24px;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+
+.greetings {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 12px;
+
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+}
+
+.socials {
+    display: flex;
+    margin-top: -2em;
+    margin-bottom: 3em;
+}
+
+.social + .social {
+    margin-left: 32px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #1a1b1b;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in;
+}
+
+.social-link:hover {
+    opacity: 1;
+}
+
+.social-icon {
+    margin-right: 12px;
+    fill: #1a1b1b;
+}
+
+.sub {
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1a1b1b;
+    margin: 32px 0;
+}
+
+
+
+ol.projects {
+    list-style: none;
+    counter-reset: my-counter;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  ol.projects li {
+    counter-increment: my-counter;
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol.projects li + li {
+      margin-top: 1em;
+  }
+
+  ol.projects li::before {
+    content: "0" counter(my-counter);
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    color: #c2c2c2;
+  }
+  
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.project-for {
+    margin-top: 0.5em;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5a5a5a;
+    transition: color 0.15s ease-in;
+}
+
+.project-name {
+    font-size: 20px;
+    line-height: 1em;
+    color: #1a1b1b;
+    transition: color 0.15s ease-in;
+}
+
+.project-desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0.5em;
+    color: #5a5a5a;
+    transition: color 0.15s ease-in;
+}
+
+.project-link:hover .project-desc {
+    color: #1a1b1b;
+}
