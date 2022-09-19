@@ -11,7 +11,6 @@ body {
     margin: 0 auto;
     max-width: 640px;
     width: 100%;
-    padding: 40px 0;
 }
 
 .heading-1 {
@@ -31,6 +30,32 @@ body {
     margin-top: 1em;
 }
 
+@media (max-width: 480px) {
+    .heading-1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 375px) {
+    .heading-1 {
+        font-size: 60px;
+    }
+    
+    .heading-2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    .heading-1 {
+        font-size: 50px;
+    }
+    
+    .heading-2 {
+        font-size: 30px;
+    }
+}
+
 ul, li {
     list-style: none;
     margin: 0;
@@ -38,8 +63,7 @@ ul, li {
 }
 
 .page {
-    padding: 24px;
-    padding-bottom: 48px;
+    padding: 40px 24px;
     box-sizing: border-box;
 }
 
@@ -167,4 +191,29 @@ ol.projects {
 
 .project-link:hover .project-desc {
     color: #1a1b1b;
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.item {
+    display: block;
+}
+
+.link {
+    color: #1673c4;
+    transition: color 0.15s ease-in;
+}
+
+.link:hover {
+    color: #0b508c;
 }
