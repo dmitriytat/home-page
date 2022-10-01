@@ -196,6 +196,8 @@ ol.projects {
 .image {
     width: 100%;
     display: block;
+    height: 100%;
+    object-fit: cover;
 }
 
 .block {
@@ -207,6 +209,10 @@ ol.projects {
 
 .item {
     display: block;
+}
+
+.item.wide {
+    height: 1fr;
 }
 
 .link {

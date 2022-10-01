@@ -27,22 +27,51 @@
             webvisor: true
         });
     </script> <!-- /Yandex.Metrika counter -->
-
+<link href="/gallery/simple-lightbox.css" rel="stylesheet">
+<script src="/gallery/simple-lightbox.js"></script>
 </head>
 <body>
 <div class="page">
     <h1 class="heading-1">A família</h1>
 
     <p class="description">
-        <a href="/photos/039.jpeg"><img class="image" src="/photos/039.jpeg" alt="A minha família"></a>
+        <a href="/photos/039.jpeg" class="item"><img class="image" src="/photos/039.jpeg" alt="A minha família"></a>
     </p>
     
-    <p class="description">A nossa família é me (Dmitriy), a minha esposa Anastasia, a minha filha Eva e o meu filho Mark. Me e a minha esposa temos 30 e 29 anos. Eva tem 2.5 anos, Mark tem só um mês.</p>
+    <p class="description">A nossa família é <b>Dmitriy</b>, a minha esposa <b>Anastasia</b>, a minha filha <b>Eva</b> e o meu filho <b>Mark</b>. Me e a minha esposa temos 30 e 29 anos. Eva tem 2.5 anos, Mark tem só um mês.</p>
     
     <p class="description">Eu sou um programador de computador, um desenvolvedor front-end, faço sites. Vim para Portugal para trabalhar em <b><a class="link" href="https://revolut.com">Revolut</a></b>.</p>
     <p class="description">Anastasia é uma medica, mas atualmente está a estudandar análise de dados.</p>
 
-    <h1 class="heading-2">A nossa casa</h1>
+    <p class="description">Não temos animais de estimação, não fumamos. Separamos o lixo.</p>
+    
+
+    <h2 class="heading-2">Nossos hobbies</h1>
+        <p class="description">Agora nossos hobbies são principalmente relacionados às crianças. Adoramos a natureza, passeios com crianças na floresta e outros lugares lindos.
+
+            Sonhamos em comprar bicicletas com cadeiras de criança e ir à natureza, fazer piqueniques.</p>
+    <p class="description">
+    <div class="block">
+        <a href="/photos/9.jpg" class="item"><img class="image" src="/photos/9.jpg" alt="A minha família"></a>
+        <a href="/photos/6.jpg" class="item"><img class="image" src="/photos/6.jpg" alt="A minha família"></a>
+        <a href="/photos/8.jpg" class="item"><img class="image" src="/photos/8.jpg" alt="A minha família"></a>
+        <a href="/photos/7.jpg" class="item"><img class="image" src="/photos/7.jpg" alt="A minha família"></a>
+        <a href="/photos/1.jpg" class="item"><img class="image" src="/photos/1.jpg" alt="A minha família"></a>
+        <a href="/photos/3.jpg" class="item"><img class="image" src="/photos/3.jpg" alt="A minha família"></a>
+    </div>
+    </p>
+    <br><br>
+    <p class="description">Às vezes fazemos pão e outros padarias.</p>
+    <p class="description">
+        <div class="block">
+            <a href="/photos/12.png" class="item"><img class="image" src="/photos/12.png" alt="A minha família"></a>
+            <a href="/photos/11.png" class="item"><img class="image" src="/photos/11.png" alt="A minha família"></a>
+            <a href="/photos/13.png" class="item"><img class="image" src="/photos/13.png" alt="A minha família"></a>
+            <a href="/photos/14.png" class="item"><img class="image" src="/photos/14.png" alt="A minha família"></a>
+        </div>
+    </p>
+
+    <h2 class="heading-2">A nossa casa</h1>
     <p class="description">Em Portugal queremos encontrar uma casa espaçosa e ensolarada na qual viveremos confortavelmente.</p>
     
     <p class="description">Temos nosso próprio apartamento na Rússia. É um apartamento espaçoso com paredes brancas e móveis Ikea. Veja como é.</p>
@@ -50,14 +79,18 @@
     <div class="block">
         <a href="/photos/032.jpeg" class="item"><img class="image" src="/photos/032.jpeg" alt="A minha família"></a>
         <a href="/photos/033.jpeg" class="item"><img class="image" src="/photos/033.jpeg" alt="A minha família"></a>
-     <a href="/photos/057.jpeg" class="item"><img class="image" src="/photos/057.jpeg" alt="A minha família"></a>
+        <a href="/photos/057.jpeg" class="item"><img class="image" src="/photos/057.jpeg" alt="A minha família"></a>
         <a href="/photos/073.jpeg" class="item"><img class="image" src="/photos/073.jpeg" alt="A minha família"></a>
-       </p>
+    </div>
 </div>
 <noscript>
     <div>
         <img src="https://mc.yandex.ru/watch/53717671" style="position:absolute; left:-9999px;" alt=""/>
     </div>
 </noscript>
+
+<script>
+    var lightbox = new SimpleLightbox('body a.item', { /* options */ });
+</script>
 </body>
 </html>
